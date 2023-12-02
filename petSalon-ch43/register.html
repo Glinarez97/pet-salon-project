@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/mystyles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="flex-container">
+            <h1>The Fashion pet</h1>
+            <nav>
+
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="About.html">About</a>
+                
+            </nav>
+
+            <img src="imgs/pet.png" alt="pet.img">
+        </div>
+    </header>
+
+    <main>
+        <h2>Register a new pet</h2>
+
+        <div class="register-c">
+            <div class="mb-3">
+                <label class="form-label">*Name:</label>
+                <input type="text" class="form-control" id="txtName" >
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">*Age:</label>
+                <input type="number" class="form-control" id="txtAge" >
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">*Gender:</label>
+                <input type="text" class="form-control" id="txtGender" >
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">*Pet size:</label>
+                <input type="text" class="form-control" id="txtPetsize" >
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">*Pet type:</label>
+                <input type="text" class="form-control" id="txtPettype" >
+            </div>
+
+        </div>
+        <button class="btn btn-success" onclick="register();">Register</button>
+
+        <div class="register-c">
+            <h2>Registered Pets</h2>
+                <div id="pets">
+                </div>
+            <table class="table">
+                        <thead>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                            <th>Pet size</th>
+                            <th>Pet type</th>
+                        </thead>
+                    <tbody id="petTable">
+                    </tbody>
+            </table>
+        </div>        
+    </main>
+    <footer class="footer">
+        <h1>Pet Salon</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="About.html">About</a>
+        </nav>
+    </footer>
+
+    <script src="scripts/register.js"></script>
+    <script src="scripts/display.js"></script>
+
+</body>
+</html>
